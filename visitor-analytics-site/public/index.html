@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple website with clear, opt-in, privacy-respecting visit analytics.">
+  <title>Welcome | Visitor Analytics Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Your Website</a>
+    <a class="admin-link" href="#admin">Site owner</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A better web experience</p>
+      <h1>Welcome to your new website.</h1>
+      <p class="intro">Share what your site is about, highlight what you offer, and make it easy for visitors to get in touch.</p>
+      <a class="button" href="#about">Explore the site</a>
+    </section>
+
+    <section class="content" id="about">
+      <h2>Make it yours</h2>
+      <p>This starter gives you a clean landing page and optional, privacy-respecting audience insights. Replace this sample content with details about your project or business.</p>
+    </section>
+
+    <section class="admin content" id="admin">
+      <h2>Owner analytics</h2>
+      <p>Enter the temporary admin token printed in the server terminal. Keep this token private.</p>
+      <form id="analytics-form">
+        <label for="admin-token">Admin token</label>
+        <div class="token-row">
+          <input id="admin-token" type="password" autocomplete="off" required>
+          <button class="button" type="submit">View totals</button>
+        </div>
+      </form>
+      <p id="analytics-error" class="message" role="status"></p>
+      <div id="analytics-results" class="results" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>We respect your privacy. Analytics are optional and only count broad, non-identifying visit categories.</p>
+    <button id="privacy-settings" class="privacy-settings" type="button">Privacy settings</button>
+  </footer>
+
+  <section id="consent" class="consent" role="region" aria-labelledby="consent-title" aria-describedby="consent-copy" hidden>
+    <div>
+      <h2 id="consent-title">Your privacy matters</h2>
+      <p id="consent-copy">If you accept, we’ll count this page view and broad browser and device categories. We do not collect your name, contact details, precise device information, or browsing history. You can say no and still use the site.</p>
+    </div>
+    <div class="consent-actions">
+      <button id="accept-analytics" class="button" type="button">Accept analytics</button>
+      <button id="reject-analytics" class="button secondary" type="button">No thanks</button>
+    </div>
+  </section>
+</body>
+</html>

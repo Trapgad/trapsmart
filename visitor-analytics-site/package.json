@@ -1,0 +1,12 @@
+{
+  "name": "visitor-analytics-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A privacy-respecting, opt-in visitor analytics website",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
