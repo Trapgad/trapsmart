@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop fashion, electronics, home essentials and more on TRAP MARKET." />
+  <title>TRAP MARKET — Your World. One Marketplace.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="topline">WELCOME TO TRAP MARKET <span>•</span> GREAT DEALS. EVERY DAY.</div>
+  <header class="header">
+    <a class="brand" href="#"><span class="brand-mark">T</span><span>TRAP<span class="brand-accent">MARKET</span><small>YOUR WORLD. ONE MARKETPLACE.</small></span></a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search products, brands and categories..." aria-label="Search products">
+      <select id="searchCategory" aria-label="Search category">
+        <option value="All">All categories</option>
+        <option>Electronics</option><option>Fashion</option><option>Home</option><option>Beauty</option><option>Accessories</option><option>Groceries</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div class="header-actions">
+      <button class="text-action" id="accountBtn">♙ <span>Account</span></button>
+      <button class="text-action" id="wishlistBtn">♡ <span>Wishlist</span></button>
+      <button class="cart-button" id="cartBtn">🛒 <span>Cart</span><b id="cartCount">0</b></button>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <button class="category-trigger" id="allCategories">☷ &nbsp; All Categories</button>
+      <a href="#products">Flash Deals</a><a href="#products">Top Products</a><a href="#wholesale">Wholesale</a><a href="#sell">Become a Seller</a><a href="#help">Help Centre</a>
+      <span class="nav-location">Delivering across Ghana 🇬🇭</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-wrap">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">THE MARKETPLACE FOR EVERYTHING</span>
+          <h1>Find more.<br><em>Pay less.</em><br>Live better.</h1>
+          <p>Discover everyday essentials, trending tech, fresh fashion and more — all in one place.</p>
+          <div class="hero-buttons"><a class="btn btn-primary" href="#products">Start shopping <span>→</span></a><a class="btn btn-outline" href="#sell">Sell on TRAP MARKET</a></div>
+          <div class="hero-proof"><span>✓ Great deals</span><span>✓ Multiple sellers</span><span>✓ Ghana-wide shopping</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-product product-a"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones"></div>
+          <div class="hero-product product-b"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Sneakers"></div>
+          <div class="hero-product product-c"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch"></div>
+          <div class="floating-tag">EVERYTHING<br><strong>IN ONE PLACE</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-row">
+      <div><b>◈</b><span><strong>Huge selection</strong><small>Products across categories</small></span></div>
+      <div><b>♧</b><span><strong>Multiple sellers</strong><small>Shop from different stores</small></span></div>
+      <div><b>▣</b><span><strong>Easy ordering</strong><small>Simple checkout experience</small></span></div>
+      <div><b>◎</b><span><strong>Ghana focused</strong><small>Prices in Ghana cedis</small></span></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><div><span class="eyebrow">EXPLORE THE MARKET</span><h2>Shop by category</h2></div><a href="#products">View all products →</a></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Electronics"><span class="cat-icon">⌁</span><b>Electronics</b><small>Phones, computers & more</small></button>
+        <button class="category-card" data-category="Fashion"><span class="cat-icon">◇</span><b>Fashion</b><small>Clothing, shoes & bags</small></button>
+        <button class="category-card" data-category="Home"><span class="cat-icon">⌂</span><b>Home & Living</b><small>Furniture and essentials</small></button>
+        <button class="category-card" data-category="Beauty"><span class="cat-icon">✧</span><b>Beauty</b><small>Skincare and personal care</small></button>
+        <button class="category-card" data-category="Accessories"><span class="cat-icon">◷</span><b>Accessories</b><small>Watches and lifestyle</small></button>
+        <button class="category-card" data-category="Groceries"><span class="cat-icon">♧</span><b>Groceries</b><small>Food and daily needs</small></button>
+      </div>
+    </section>
+
+    <section class="deal-banner" id="wholesale">
+      <div><span class="eyebrow">FOR BUSINESSES & BULK BUYERS</span><h2>Buy more. Save more.</h2><p>Explore wholesale-friendly products and connect with sellers for bulk orders.</p></div>
+      <a href="#products" class="btn btn-light">Explore wholesale deals →</a>
+      <div class="deal-shape">WHOLESALE<br><strong>PRICES</strong></div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading"><div><span class="eyebrow">HANDPICKED FOR YOU</span><h2>Popular products</h2><p class="muted">Discover products customers are loving.</p></div>
+        <div class="product-filters"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Electronics">Electronics</button><button class="filter" data-filter="Fashion">Fashion</button><button class="filter" data-filter="Home">Home</button></div>
+      </div>
+      <div class="product-grid" id="productGrid"><div class="loading">Loading products...</div></div>
+    </section>
+
+    <section class="seller-banner" id="sell">
+      <div class="seller-icon">↗</div><div><span class="eyebrow">GROW YOUR BUSINESS</span><h2>Have products to sell?</h2><p>Join TRAP MARKET and put your products in front of more customers.</p></div>
+      <button class="btn btn-primary" id="openSeller">Start selling</button>
+    </section>
+
+    <section class="newsletter" id="help"><div><span class="eyebrow">STAY IN THE LOOP</span><h2>Deals worth opening your inbox for.</h2><p>Get product updates and marketplace news.</p></div><form id="newsletterForm"><input type="email" placeholder="Enter your email address" required><button class="btn btn-primary">Subscribe</button></form></section>
+  </main>
+
+  <footer class="footer"><div class="footer-main"><div class="brand footer-brand"><span class="brand-mark">T</span><span>TRAP<span class="brand-accent">MARKET</span><small>YOUR WORLD. ONE MARKETPLACE.</small></span></div><p>Bringing buyers and sellers together. Discover more, shop smarter and grow with TRAP MARKET.</p><div class="footer-links"><a href="#products">Shop</a><a href="#sell">Sell with us</a><a href="#help">Help centre</a><a href="mailto:support@trapmarket.example">Contact</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> TRAP MARKET. All rights reserved.</span><span>Made for shoppers in Ghana 🇬🇭</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer"><div class="drawer-head"><h3>Your shopping cart</h3><button class="close" data-close>×</button></div><div id="cartItems" class="drawer-content"></div><div class="cart-summary"><div class="total-line"><span>Subtotal</span><strong id="cartTotal">GH₵0.00</strong></div><small>Delivery fees are calculated separately.</small><button class="btn btn-primary full" id="checkoutBtn">Proceed to checkout</button></div></aside>
+  <section class="modal" id="checkoutModal"><div class="modal-head"><h3>Complete your order</h3><button class="close" data-close>×</button></div><form id="checkoutForm" class="modal-body"><label>Full name<input name="customer" required placeholder="Your name"></label><label>Phone number<input name="phone" required placeholder="e.g. 024 000 0000"></label><label>Delivery address<textarea name="address" required placeholder="House number, area, city"></textarea></label><label>Payment method<select name="paymentMethod"><option>Pay on delivery</option><option>Mobile Money (setup required)</option><option>Card (setup required)</option></select></label><div class="checkout-total">Order total <strong id="checkoutTotal">GH₵0.00</strong></div><button class="btn btn-primary full" type="submit">Place order</button><p class="fine-print">Demo checkout: online payment methods are placeholders until a payment provider account is connected.</p></form></section>
+  <section class="modal" id="sellerModal"><div class="modal-head"><h3>List a product</h3><button class="close" data-close>×</button></div><form id="sellerForm" class="modal-body"><label>Product name<input name="name" required></label><label>Category<select name="category"><option>Electronics</option><option>Fashion</option><option>Home</option><option>Beauty</option><option>Accessories</option><option>Groceries</option></select></label><label>Price (GH₵)<input name="price" type="number" min="1" step="0.01" required></label><label>Stock quantity<input name="stock" type="number" min="0" value="10"></label><label>Minimum wholesale quantity<input name="wholesaleMin" type="number" min="1" value="5"></label><label>Image URL<input name="image" type="url" placeholder="https://..."></label><label>Product description<textarea name="description"></textarea></label><button class="btn btn-primary full">Publish product</button><p class="fine-print">Starter demo: seller identity and permissions must be secured before public launch.</p></form></section>
+  <section class="modal small-modal" id="accountModal"><div class="modal-head"><h3>Welcome to TRAP MARKET</h3><button class="close" data-close>×</button></div><div class="modal-body"><p>Customer and seller accounts will be enabled when authentication is connected.</p><button class="btn btn-primary full" data-close>Continue shopping</button></div></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
